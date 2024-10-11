@@ -5,7 +5,7 @@ Here's a sample README file description for your website project using Tailwind 
 
 ## Description
 
-Welcome to [Your Project Name]! This is a modern, responsive website designed using Tailwind CSS, a utility-first CSS framework that allows for rapid UI development. The project aims to create an aesthetically pleasing and user-friendly experience while demonstrating the power and flexibility of Tailwind CSS.
+Welcome to Greendan! This is a modern, responsive website designed using Tailwind CSS, a utility-first CSS framework that allows for rapid UI development. The project aims to create an aesthetically pleasing and user-friendly experience while demonstrating the power and flexibility of Tailwind CSS.
 
 ## Features
 
