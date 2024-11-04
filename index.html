@@ -13,16 +13,29 @@
     <!--Responsive Navebar-->
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greendan</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="wd-6 h-6 md:hidden">
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="wd-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-        <ul class="flex gap-5 hidden md:flex" >
-            <li><a href="#" class="hover:underline hover:text-black text-gray-600">Home</a></li>
-            <li><a href="#" class="hover:underline hover:text-black text-gray-600">About</a></li>
-            <li><a href="#" class="hover:underline hover:text-black text-gray-600">Contact</a></li>
+        <ul class="flex gap-5 hidden md:flex">
+            <li><a href="index.html" class="hover:underline hover:text-black text-gray-600">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black text-gray-600">About</a></li>
+            <li><a href="contact.html" class="hover:underline hover:text-black text-gray-600">Contact</a></li>
         </ul>
     </nav>
+    <!--Side Nav bar-->
+    <section id="menubox" class="gap-5 fixed transition-all duration-1000 bg-green-100 z-20 top-0  "style="width: 50%; height: 100vh; right: -50% ;">
+         <div class="text-right p-5">
+            <p id="close1" class="cursor-pointer">X</p>
+         </div>
+        <ul class="flex flex-col items-center gap-10 ">
+                <li><a href="index.html" class="hover:underline hover:text-black text-gray-600">Home</a></li>
+                <li><a href="product.html" class="hover:underline hover:text-black text-gray-600">About</a></li>
+                <li><a href="contact.html" class="hover:underline hover:text-black text-gray-600">Contact</a></li>
+            </ul>
+     
+       
+    </section>
     <!--Header Section-->
     <section class="bg-green-100 p-4 md:p-10 md:gap-10 flex justify-center ">
         <div>
@@ -37,6 +50,7 @@
         <img src="./image/header -image.avif" alt="plant image" class="w-60 h-60 p-4  hidden md:block"
             style="border-radius: 20px;">
     </section>
+
     <!--About Section-->
     <section class="text-center">
         <h2 class="text-xl font-medium text-center mt-3">About Us</h2>
@@ -113,28 +127,28 @@
     <section>
         <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
         <div class="flex flex-col  items-center gap-5 text-white m-5">
-            
+
             <div class="bg-green-900 inline p-5 container">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus doloribus laudantium labore ullam
                     provident nulla, deleniti unde cumque eaque eos, laboriosam voluptatibus fugit nihil error vitae ea?
                     Ducimus, explicabo laboriosam.</p>
                 <p class="text-yellow-300 font-medium">Geny Maththew</p>
             </div>
-            
+
             <div class="bg-green-900 p-5  container  ">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus doloribus laudantium labore ullam
                     provident nulla, deleniti unde cumque eaque eos, laboriosam voluptatibus fugit nihil error vitae ea?
                     Ducimus, explicabo laboriosam.</p>
                 <p class="text-yellow-300 font-medium">Jack</p>
             </div>
-            
+
             <div class="bg-green-900 p-5  container  ">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus doloribus laudantium labore ullam
                     provident nulla, deleniti unde cumque eaque eos, laboriosam voluptatibus fugit nihil error vitae ea?
                     Ducimus, explicabo laboriosam.</p>
                 <p class="text-yellow-300 font-medium">Rasak</p>
             </div>
-        
+
         </div>
     </section>
     <!--News Letter Section-->
@@ -149,31 +163,46 @@
     <!--Contact page-->
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical
+                issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.
+            </p>
             <form action="#" class="space-y-8">
                 <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@flowbite.com" required>
                 </div>
                 <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
             </form>
         </div>
-      </section>
+    </section>
     <!--footer-->
     <div class="bg-green-100 p-4 mt-4">
         <h1 class="text-3xl font-bold">Greenden</h1>
         <p class="mt-2">The Standard chunk of lorem ipsum used since 1500s is reprodused below for those interest</p>
         <p class="mt-4">&copy; Greenday.com</p>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
